@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+  <meta name="description" content="Gulp project">
+  <meta name="theme-color" content="#000000">
+  <title>Главная</title>
+  <link type="image/png" sizes="32x32" rel="icon" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/index.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=b8ebcb0d-caac-4ecf-9239-038668601e6d&lang=ru_RU" type="text/javascript"></script>
+</head>
+
+
+  <body>
+    <header class="header">
+  <div class="container">
+    <div class="header__top">
+      <div class="header__logo">
+        <img src="images/logo.png" alt="Ultra Marine">
+      </div>
+      <div class="header-contacts">
+        <ul>
+          <li>
+            <svg width="100" height="100">
+              <use xlink:href="images/icons/icons.svg#location"/>
+            </svg>
+            Санкт-Петербург
+          </li>
+          <li>
+            <svg>
+              <use xlink:href="images/icons/icons.svg#phone_call"/>
+            </svg>
+            <a href="tel:+79533555833">+7 (953) 355-58-33</a>
+          </li>
+        </ul>
+      </div>
+      <div class="burger-block">
+        <div class="burger">
+          <span class="burger__line burger__line--1"></span><span class="burger__line burger__line--2"></span><span class="burger__line burger__line--3"></span>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <ul class="menu">
+        <li class="menu__item active">
+          <a class="menu__link" href="">продукты</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="">решения</a>
+          <div class="submenu-wrap">
+            <div class="submenu-spacer"></div>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a href="" class="submenu__link">
+                  Система Технического Облуживания
+                </a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Аудиты и Инспекции</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Е-СУБ</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="">медиа</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="">о компании</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="">контакты</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="">поддержка</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="">услуги</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<!-- mobile-menu--active -->
+<div class="mobile-menu">
+  <ul class="menu-mob">
+    <!-- menu-mob__item--active  -->
+    <li class="menu-mob__item menu-mob__item--submenu">
+      <a href="" class="menu-mob__link">Продукты</a>
+      <ul class="submenu-mob">
+        <li class="submenu-mob__item">
+          <a href="" class="submenu-mob__link">Продукт</a>
+        </li>
+        <li class="submenu-mob__item">
+          <a href="" class="submenu-mob__link">Продукт 1</a>
+        </li>
+        <li class="submenu-mob__item">
+          <a href="" class="submenu-mob__link">Продукт 2</a>
+        </li>
+      </ul>
+    </li>
+    <li class="menu-mob__item">
+      <a href="" class="menu-mob__link">Решения</a>
+    </li>
+    <li class="menu-mob__item">
+      <a href="" class="menu-mob__link">Медиа</a>
+    </li>
+    <li class="menu-mob__item">
+      <a href="" class="menu-mob__link">О компании</a>
+    </li>
+    <li class="menu-mob__item">
+      <a href="" class="menu-mob__link">Контакты</a>
+    </li>
+    <li class="menu-mob__item">
+      <a href="" class="menu-mob__link">Поддержка</a>
+    </li>
+    <li class="menu-mob__item">
+      <a href="" class="menu-mob__link">Услуги</a>
+    </li>
+  </ul>
+</div>
+
+    <section class="main">
+      <div class="container">
+        <div class="main__content">
+          <div class="main__title">
+            <h1>
+              Мы разрабатываем программное обеспечение
+              <span>
+                для судовладельцев, операторов и технических менеджеров
+              </span>
+            </h1>
+          </div>
+          <!--  Пропсы для кнопки: 
+  Добавить в пропс classes необходимые классы 
+  Размеры
+   - btn--m 
+   - btn--l
+
+   Цвета: 
+   -btn--green
+   -btn--light
+   -btn--blue
+   -btn--violet
+-->
+
+<button type="button" class="btn btn--green">написать нам</button>
+
+        </div>
+      </div>
+    </section>
+    <section class="double-section">
+      <div class="ecosystem-section">
+        <div class="container">
+          <h2 class="section-title section-title--blue">
+            Морская Экосистема Управления Флотом
+          </h2>
+          <div class="ecosystem">
+            <div class="ecosystem__item">
+              <svg>
+                <use xlink:href="images/icons/icons.svg#tech_service"/>
+              </svg>
+              <p class="ecosystem__title">Система технического обслуживания</p>
+            </div>
+            <div class="ecosystem__item">
+              <svg>
+                <use xlink:href="images/icons/icons.svg#audit"/>
+              </svg>
+              <p class="ecosystem__title">Аудиты и инспекции</p>
+            </div>
+            <div class="ecosystem__item">
+              <svg>
+                <use xlink:href="images/icons/icons.svg#safety"/>
+              </svg>
+              <p class="ecosystem__title">
+                Электронная система управления безопасностью
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="technology-section">
+        <div class="container">
+          <h2 class="section-title">Морская Экосистема Управления Флотом</h2>
+          <ul class="technologies">
+            <li class="technologies__item">
+              <img src="../images/technology/python.png" alt="python">
+            </li>
+            <li class="technologies__item">
+              <img src="../images/technology/graphql.png" alt="graphql">
+            </li>
+            <li class="technologies__item">
+              <img src="../images/technology/mongoDB.png" alt="mongoDB">
+            </li>
+            <li class="technologies__item">
+              <img src="../images/technology/reactjs.png" alt="reactjs">
+            </li>
+            <li class="technologies__item">
+              <img src="../images/technology/wpf.png" alt="wpf">
+            </li>
+            <li class="technologies__item">
+              <img src="../images/technology/c-sharp.png" alt="c-sharp">
+            </li>
+            <li class="technologies__item">
+              <img src="../images/technology/websockets.png" alt="websockets">
+            </li>
+            <li class="technologies__item">
+              <img src="../images/technology/docker.png" alt="docker">
+            </li>
+            <li class="technologies__item">
+              <img src="../images/technology/git.png" alt="git">
+            </li>
+            <li class="technologies__item">
+              <img src="../images/technology/gitlab.png" alt="gitlab">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="advantage-company">
+      <div class="container">
+        <h2 class="section-title">
+          Команда профессионалов из&nbsp;морской и&nbsp;IT&nbsp;индустрий,
+          развивающих морскую цифровизацию в&nbsp;России
+        </h2>
+        <ul class="advantage-company__list">
+          <li class="advantage-company__item">
+            <div class="advantage-company__icon">
+              <svg width="100" height="100">
+                <use xlink:href="images/icons/icons.svg#target"/>
+              </svg>
+            </div>
+            <p>
+              <span class="fw--bold"> Основная цель</span> — Полное
+              импортозамещение морских программных решений и развитие данной
+              отрасли в&nbsp;РФ с&nbsp;использованием самых современных
+              и&nbsp;продвинутых решений.
+            </p>
+          </li>
+          <li class="advantage-company__item">
+            <div class="advantage-company__icon">
+              <svg width="100" height="100">
+                <use xlink:href="images/icons/icons.svg#team"/>
+              </svg>
+            </div>
+            <p>
+              <span class="fw--bold"> Состав команды</span> — специалисты из
+              ведущих судоходных компаний РФ, а&nbsp;также
+              компаний-разработчиков программного обеспечения.
+            </p>
+          </li>
+          <li class="advantage-company__item">
+            <div class="advantage-company__icon">
+              <svg width="100" height="100">
+                <use xlink:href="images/icons/icons.svg#point"/>
+              </svg>
+            </div>
+            <p>
+              <span class="fw--bold"> Месторасположение</span> — компания
+              зародилась в морской столице России — Санкт-Петербурге.
+            </p>
+          </li>
+        </ul>
+        <img class="back-img" src="../images/bg/lighthouse.png" alt="lighthous">
+      </div>
+    </section>
+    <section class="headline-section">
+      <div class="container">
+        <div class="headline-wrap">
+          <div class="swiper swiper-headline">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide headline-item">
+                <div class="headline-item__left">
+                  <div class="headline-date">
+                    Судоходство.
+                    <span>18:04 21.06.2023</span>
+                  </div>
+                  <div class="headline-title">
+                    Глава Минтранса доложил президенту России о&nbsp;ходе
+                    цифровизации морского транспорта
+                  </div>
+                  <div class="headline-descript">
+                    Президент России Владимир Путин сегодня провел совещание
+                    с&nbsp;членами правительства. Министр транспорта РФ Виталий
+                    Савельев доложил главе государства о&nbsp;работе, проводимой
+                    Минтрансом по&nbsp;цифровизации российского транспортного
+                    комплекса.
+                  </div>
+                  <div class="headline-info">
+                    <div class="headline-info__inner">
+                      <div class="headline-info_text">
+                        С марта 2020 года для перевозок отдельных групп товаров
+                        применяется электронная навигационная пломба, сообщает
+                        пресс-служба Минтранса.
+                      </div>
+                      <div class="headline-info_btn">
+                        <!--  Пропсы для кнопки: 
+  Добавить в пропс classes необходимые классы 
+  Размеры
+   - link-oblique--m 
+   - link-oblique--l
+   - link-oblique--xl
+
+-->
+
+<a href="#" class="link-oblique link-oblique--l">
+  <span>подробнее</span>
+</a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="headline-item__right">
+                  <img class="headline-img" src="../images/headline/headline-img.jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-slide headline-item">
+                <div class="headline-item__left">
+                  <div class="headline-date">
+                    Судоходство.
+                    <span>18:04 21.06.2023</span>
+                  </div>
+                  <div class="headline-title">
+                    Глава Минтранса доложил президенту России о&nbsp;ходе
+                    цифровизации морского транспорта
+                  </div>
+                  <div class="headline-descript">
+                    Президент России Владимир Путин сегодня провел совещание
+                    с&nbsp;членами правительства. Министр транспорта РФ Виталий
+                    Савельев доложил главе государства о&nbsp;работе, проводимой
+                    Минтрансом по&nbsp;цифровизации российского транспортного
+                    комплекса.
+                  </div>
+                  <div class="headline-info">
+                    <div class="headline-info__inner">
+                      <div class="headline-info_text">
+                        С марта 2020 года для перевозок отдельных групп товаров
+                        применяется электронная навигационная пломба, сообщает
+                        пресс-служба Минтранса.
+                      </div>
+                      <div class="headline-info_btn">
+                        <!--  Пропсы для кнопки: 
+  Добавить в пропс classes необходимые классы 
+  Размеры
+   - link-oblique--m 
+   - link-oblique--l
+   - link-oblique--xl
+
+-->
+
+<a href="#" class="link-oblique link-oblique--l">
+  <span>подробнее</span>
+</a>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="headline-item__right">
+                  <img class="headline-img" src="../images/headline/headline-img.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="headline-controls">
+          <div class="slider-nav">
+            <div class="nav-slider-btn nav-slider-btn-prev swiper-headline-button-prev">
+              <span></span>
+            </div>
+            <div class="nav-slider-btn nav-slider-btn-next swiper-headline-button-next">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="news-section">
+      <div class="container">
+        <div class="news-section__inner">
+          <h2 class="title-block">Аналитика</h2>
+          <div class="news-wrap">
+            <div class="swiper news swiper-news">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide news-item">
+                  <div class="news-item__info">
+                    <div class="news-date">07.04.2021</div>
+                    <div class="news-title">Новость 1</div>
+                    <div class="news-descript">
+                      Россия бросила очень много сил на развитие Северного
+                      морского пути. Эксперты сулят ему большое будущее как едва
+                      ли не самой главной морской на развитие Северного морского
+                      пути. Эксперты сулят ему большое будущее как едва ли не
+                      самой главной морской...
+                    </div>
+                  </div>
+                  <div class="news-link">
+                    <a href="#">весь текст</a>
+                  </div>
+                </div>
+                <div class="swiper-slide news-item">
+                  <div class="news-item__info">
+                    <div class="news-date">07.04.2021</div>
+                    <div class="news-title">Новость 2</div>
+                    <div class="news-descript">
+                      Россия бросила очень много сил на развитие Северного
+                      морского пути.
+                    </div>
+                  </div>
+                  <div class="news-link">
+                    <a href="#">весь текст</a>
+                  </div>
+                </div>
+                <div class="swiper-slide news-item">
+                  <div class="news-item__info">
+                    <div class="news-date">07.04.2021</div>
+                    <div class="news-title">Новость 3</div>
+                    <div class="news-descript">
+                      В ходе оказания юридической помощи каждому адвокату
+                      приходилось хотя бы раз столкнуться с несовершенствами
+                      правового регулирования тех или...
+                    </div>
+                  </div>
+                  <div class="news-link">
+                    <a href="#">весь текст</a>
+                  </div>
+                </div>
+                <div class="swiper-slide news-item">
+                  <div class="news-item__info">
+                    <div class="news-date">07.04.2021</div>
+                    <div class="news-title">Новость 4</div>
+                    <div class="news-descript">
+                      Грузы между портами РФ не должны перевозиться на судах
+                      иностранных владельцев
+                    </div>
+                  </div>
+                  <div class="news-link">
+                    <a href="#">весь текст</a>
+                  </div>
+                </div>
+                <div class="swiper-slide news-item">
+                  <div class="news-item__info">
+                    <div class="news-date">07.04.2021</div>
+                    <div class="news-title">Новость 5</div>
+                    <div class="news-descript">
+                      Грузы между портами РФ не должны перевозиться на судах
+                      иностранных владельцев
+                    </div>
+                  </div>
+                  <div class="news-link">
+                    <a href="#">весь текст</a>
+                  </div>
+                </div>
+                <div class="swiper-slide news-item">
+                  <div class="news-item__info">
+                    <div class="news-date">07.04.2021</div>
+                    <div class="news-title">Новость 6</div>
+                    <div class="news-descript">
+                      Грузы между портами РФ не должны перевозиться на судах
+                      иностранных владельцев
+                    </div>
+                  </div>
+                  <div class="news-link">
+                    <a href="#">весь текст</a>
+                  </div>
+                </div>
+                <div class="swiper-slide news-item">
+                  <div class="news-item__info">
+                    <div class="news-date">07.04.2021</div>
+                    <div class="news-title">Новость 7</div>
+                    <div class="news-descript">
+                      Грузы между портами РФ не должны перевозиться на судах
+                      иностранных владельцев
+                    </div>
+                  </div>
+                  <div class="news-link">
+                    <a href="#">весь текст</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news-controls">
+              <div class="slider-nav">
+                <div class="nav-slider-btn nav-slider-btn-prev swiper-news-button-prev">
+                  <span></span>
+                </div>
+                <div class="nav-slider-btn nav-slider-btn-next swiper-news-button-next">
+                  <span></span>
+                </div>
+              </div>
+              <!--  Пропсы для кнопки: 
+  Добавить в пропс classes необходимые классы 
+  Размеры
+   - link--m
+
+   Цвета: 
+   -link--green
+-->
+
+<a href="#" class="link link--m">читать все</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info-section">
+      <div class="container">
+        <div class="info-section__wrap">
+          <div class="info-section__title-mob-block">
+            <h2 class="info-section__title info-section__title--mobile">
+              часто задаваемые вопросы
+            </h2>
+          </div>
+          <div class="info-section__content">
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-item__trigger">
+                  Текст вопроса на несколько строчек?
+                </div>
+                <div class="accordion-item__content">
+                  Не следует, однако забывать, что сложившаяся структура
+                  организации позволяет выполнять важные задания по разработке
+                  дальнейших направлений развития. Таким образом рамки и место
+                  обучения кадров позволяет оценить значение систем массового
+                  участия.
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item__trigger">
+                  Текст вопроса на несколько строчек?
+                </div>
+                <div class="accordion-item__content">
+                  Не следует, однако забывать, что сложившаяся структура
+                  организации позволяет выполнять важные задания по разработке
+                  дальнейших направлений развития. Таким образом рамки и место
+                  обучения кадров позволяет оценить значение систем массового
+                  участия.
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item__trigger">
+                  Текст вопроса на несколько строчек?
+                </div>
+                <div class="accordion-item__content">
+                  Не следует, однако забывать, что сложившаяся структура
+                  организации позволяет выполнять важные задания по разработке
+                  дальнейших направлений развития. Таким образом рамки и место
+                  обучения кадров позволяет оценить значение систем массового
+                  участия.
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-item__trigger">
+                  Текст вопроса на несколько строчек?
+                </div>
+                <div class="accordion-item__content">
+                  Не следует, однако забывать, что сложившаяся структура
+                  организации позволяет выполнять важные задания по разработке
+                  дальнейших направлений развития. Таким образом рамки и место
+                  обучения кадров позволяет оценить значение систем массового
+                  участия.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info-section__header">
+            <h2 class="info-section__title info-section__title--desctop">
+              часто задаваемые вопросы
+            </h2>
+            <div class="info-section__header-body">
+              <p class="info-section__subtitle">Не нашли нужного ответа?</p>
+              <p class="info-section__text">
+                Вы всегда можете уточнить любой интересующий вас вопрос у нашего
+                менеджера по телефону или заполнив специальную форму ниже.
+              </p>
+              <!--  Пропсы для кнопки: 
+  Добавить в пропс classes необходимые классы 
+  Размеры
+   - link--m
+
+   Цвета: 
+   -link--green
+-->
+
+<a href="#" class="link link--m link--light-green">Задать свой вопрос</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map" id="map">
+      <div class="map__address">
+        Санкт-Петербург, ​Лермонтовский проспект 31
+      </div>
+    </section>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <div class="footer__left">
+        <div class="footer__logo">
+          <img src="images/logo-white.png" alt="Ultra Marine">
+        </div>
+        <div class="footer__company">
+          <ul>
+            <li>ООО “УМ Технологии”</li>
+            <li>ОГРН: 0000000000000</li>
+            <li>ИНН: 000000000</li>
+            <li class="footer-block-mob">
+              <a href="tel:">+7 (000) 000-00-00</a>
+            </li>
+            <li class="footer-block-mob"><a href="">www.ultramarine.ru</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__center">
+        <ul class="footer__menu">
+          <li><a href="">продукты</a></li>
+          <li><a href="">решения</a></li>
+          <li><a href="">медиа</a></li>
+          <li><a href="">о компании</a></li>
+          <li><a href="">контакты</a></li>
+          <li><a href="">поддержка</a></li>
+        </ul>
+        <ul class="footer__socials">
+          <li>
+            <a href="">
+              <svg width="100%" height="100%">
+                <use xlink:href="images/icons/icons.svg#tg"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="100%" height="100%">
+                <use xlink:href="images/icons/icons.svg#fb"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="100%" height="100%">
+                <use xlink:href="images/icons/icons.svg#vk"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="100%" height="100%">
+                <use xlink:href="images/icons/icons.svg#inst"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="100%" height="100%">
+                <use xlink:href="images/icons/icons.svg#ok"/>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="100%" height="100%">
+                <use xlink:href="images/icons/icons.svg#google"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-block-mob footer__made">
+          <svg width="100%" height="100%">
+            <use xlink:href="images/icons/icons.svg#spb"/>
+          </svg>
+          <span>создано в санкт-петербурге.</span>
+        </div>
+        <div class="footer__address">
+          <svg width="100%" height="100%">
+            <use xlink:href="images/icons/icons.svg#location-white"/>
+          </svg>
+          <span>Санкт-Петербург, Лермонтовский проспект 31</span>
+        </div>
+        <div class="footer__copyright">2022-2023 все права защищены</div>
+      </div>
+      <div class="footer-block-desktop footer__right">
+        <ul class="footer__contacts">
+          <li><a href="tel:">+7 (000) 000-00-00</a></li>
+          <li><a href="">www.ultramarine.ru</a></li>
+        </ul>
+        <div class="footer__made">
+          <svg width="100%" height="100%">
+            <use xlink:href="images/icons/icons.svg#spb"/>
+          </svg>
+          <span>создано в санкт-петербурге.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+
+  <script src="js/index.min.js"></script>
+  <script type="text/javascript">
+    ymaps.ready(init);
+    function init() {
+      var myMap = new ymaps.Map('map', {
+        center: [59.918264, 30.296015],
+        zoom: 12,
+      });
+      var myPlacemark = new ymaps.Placemark([59.918264, 30.296015], null, {
+        preset: 'islands#darkGreenDotIcon',
+      });
+      myMap.geoObjects.add(myPlacemark);
+    }
+  </script>
+</html>
