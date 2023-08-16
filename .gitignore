@@ -1,0 +1,9 @@
+.vscode
+.VSCodeCounter
+.DS_Store
+
+node_modules
+package-lock.json
+.favorites.json
+
+src/.temporary_cache
